@@ -1,0 +1,297 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #0f0f0f;
+}
+
+:any-link{
+    text-decoration: none;
+    
+}
+
+html, body{
+  font-family: sans-serif;
+}
+.container{
+  height: 100vh;
+  width: 120vw;
+  display: flex;
+  transform: translateX(-20vw);
+  transition: 0.5s;
+}
+.container-show{
+  transform: translateX(0);
+  transition: 0.5s;
+  width: 100%;
+
+
+}
+
+.nav-container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.nav{
+    background-color: white; ;
+    border-radius: 30px;
+    width: 95%;
+    height: 120px;
+    margin: 20px 20px 0 20px ;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    opacity: 1;
+    justify-content: space-between; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    backdrop-filter: blur(60px);
+
+}
+.imagebackground{
+  position: fixed;
+  top: 0;
+  border-radius: 30px;
+  opacity: 0.3  ;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  
+  background-image: url('https://img.freepik.com/free-vector/gradient-abstract-background-with-different-shapes_23-2149110297.jpg?w=1380&t=st=1707242160~exp=1707242760~hmac=db3d9e8206160fd9554abfad47279f81c46dfc0fc22535986420a888bb8836fa'); /* You can use a blurred image or a CSS gradient */
+  background-size: cover;
+
+  filter: blur(90px); /* Apply blur effect */
+  z-index: -1; /* Ensure it's behind other elements */
+}
+.nav-search-container{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+   width: 40%;
+   height: 50%;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  background-color: #f0f0f0; /* Gray background color */
+  border-radius: 20px; /* Adjust border radius as needed */
+  padding: 5px 10px; /* Adjust padding as needed */
+  }
+
+
+.search-left {
+margin-right: 10px; /* Adjust margin as needed */
+}
+
+.search-input {
+border: none; /* Remove input border */
+background-color: transparent; /* Make input background transparent */
+width: 200px; /* Adjust width as needed */
+padding: 5px; /* Adjust padding as needed */
+font-size: 16px; /* Adjust font size as needed */
+outline: none; /* Remove outline */
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+  margin: 2em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+ .nav-item{
+  flex: 1;
+    margin: 2em;
+    font-weight: 400;
+    /* font-size: 1.5vw; */
+}
+.nav-item:last-child{
+flex:2;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+
+.main-div{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 30px ;
+
+}
+.main-wrapper{
+  margin: 20px;
+  height: 100%;
+}
+
+  
+
+  
+.aside{
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  margin: 0 0 0 20px;
+
+}
+.aside-wrapper{
+  width: 100%;
+  height: 98%;
+  padding: 10px;
+  background-color: #3741d8;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  width: 90%; /* adjust size as needed */
+  height: 100px; /* adjust size as needed */
+}
+.logo-container> h1 {
+  color: white;
+  font-size:x-large;
+
+}
+.logo-circle {
+  width: 50px; /* adjust size as needed */
+  height: 50px; /* adjust size as needed */
+  border-radius: 50%; /* to create a circle */
+  background-color: white; /* color of the big circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle-inside {
+  width: 30px; /* adjust size as needed */
+  height: 30px; /* adjust size as needed */
+  border-radius: 30px; /* to create a circle */
+  background-color: #3741d8; /* color of the inner circle */
+}
+
+.background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+  display: flex;
+  flex-grow: 1;
+  z-index: -1;
+}
+
+.background div {
+  position: absolute;
+  border-radius: 100%;
+  height: 0;
+  filter: blur(240vw);
+  opacity: 0.4;
+}
+
+.background div:nth-child(1) {
+  background: linear-gradient(132deg, #e6e6e6 0.00%, #616bff 100.00%);
+  width: 36%;
+  padding-top: 56%;
+  left: 51%;
+  top: 49%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(2) {
+  background: linear-gradient(132deg, #7c394e 0.00%, #e8267e 100.00%);
+  width: 15%;
+  padding-top: 21%;
+  left: 78%;
+  top: 69%;
+  /* transform: translateX(-50%) translateY(-50%); */
+}
+
+
+.menulist{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+color: #fefeff;
+
+}
+
+.menuitem{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: start;
+  gap: 10px;
+  height: 60px; 
+  padding: 20px;
+  border-radius:20px ;
+ background: #7f85e6;
+ transition: background-color 0.3s, backdrop-filter 0.3s, translateX 0.2s,scale 0.2s;
+
+}
+.menuitem.active{
+  background-color: rgba(127, 133, 230, 0.8); /* Change opacity */
+  transform: translateX(10px); 
+}
+.menuitem:hover {
+  background-color: rgba(127, 133, 230, 0.8); /* Change opacity */
+  transform: translateX(10px); 
+}
+/* .menuitem:hover > .menutext {
+  transform: translateX(10px); 
+  transition-delay: 500ms;
+} */
+.menuitem:hover > .menuicon {
+  transform: scale(1.05); 
+}
+.menuicon{
+  fill: #fefeff;
+  transition: scale 0.2s;
+
+}
+.menutext{
+  color: #fefeff;
+  transition: translateX 0.9s;
+  transition-delay: 500ms;
+
+}
+/* 
+.menutext.activetext {
+  transform: translateX(10px); /* Add scale effect 
+} 
+*/
+
+.menutext:hover {
+  background-color: rgba(127, 133, 230, 0.8); /* Change opacity */
+  transform: scale(1.05); /* Add scale effect */
+}
+

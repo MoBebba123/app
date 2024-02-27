@@ -1,0 +1,27 @@
+.home-container{
+    display: flex;
+    height: 200vh;
+    flex-direction: column;
+}.home-container >h1{
+    margin-bottom: 20px;
+}
+.card{
+
+    background-color: #fefeff ;
+    border-radius: 30px;
+    padding: 20px;
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    width: 60%;
+    transition: 200ms;
+
+    height: 300px;
+}
+.card:hover{
+    transform: scale(1.01);
+    transition: 200ms;
+}
+.card-title{
+    font-size: 20px;
+}
